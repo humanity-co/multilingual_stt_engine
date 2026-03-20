@@ -33,12 +33,19 @@ multilingual_stt_engine/
 ## Setup & Installation
 
 **Prerequisites:**
-- Python 3.8+
-- Kaldi compiled locally (added to `$PATH`)
-- KenLM installed
-- Linux/macOS environment
+
+1. **Kaldi Speech Recognition Toolkit**: Must be installed separately. 
+   - [NEW] The `Kaldi/` source/build directory is **excluded** from this repository due to its size (>4GB). 
+   - Follow the [official Kaldi installation guide](https://kaldi-asr.org/doc/install.html) to compile it.
+   - Ensure the compiled binaries (like `online2-wav-nnet3-latgen-faster`) are in your `$PATH`.
+2. **KenLM**: Required for language model training and inference.
+3. **Python 3.8+**: Recommended for the streaming inference wrapper.
+4. **Git LFS**: This repository uses Git LFS for models and datasets. Run `git lfs pull` after cloning.
 
 **Python Environment:**
+> [!NOTE]
+> The `venv/` directory is **excluded**. You must create your own local virtual environment.
+
 ```bash
 python -m venv venv
 source venv/bin/activate
