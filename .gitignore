@@ -4,12 +4,6 @@ venv/
 # Kaldi
 Kaldi/
 
-# Datasets
-datasets/
-
-# Large models
-models/whisper-marathi-finetuned/model.bin
-
 # OS-specific
 .DS_Store
 
