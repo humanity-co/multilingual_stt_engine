@@ -1,0 +1,17 @@
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy>=1.21.0
+sounddevice>=0.4.5
+setuptools>=65.0.0
+
+# Silero VAD doesn't have a direct PyPI package under that name, 
+# it's usually pulled via torch.hub, but onnxruntime is good for its explicit onnx version execution
+onnxruntime>=1.15.0
+
+# Dependencies for G2P and audio manipulation
+pydub>=0.25.1
+librosa>=0.10.0
+soundfile>=0.12.1
+
+# Text and Language modeling helpers
+kenlm @ git+https://github.com/kpu/kenlm.git

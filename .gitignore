@@ -1,0 +1,20 @@
+# venv
+venv/
+
+# Kaldi
+Kaldi/
+
+# Datasets
+datasets/
+
+# Large models
+models/whisper-marathi-finetuned/model.bin
+
+# OS-specific
+.DS_Store
+
+# Other large or unnecessary files
+data/
+*.log
+__pycache__/
+*.pyc
