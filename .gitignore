@@ -1,14 +1,56 @@
-# venv
-venv/
+# Build and Dependency Directories
+node_modules/
+bower_components/
+jspm_packages/
+.npm/
+.yarn/
+dist/
+build/
+bin/
+obj/
+target/
+.next/
+.nuxt/
+out/
+*.o
+*.dylib
+*.so
+*.dll
+*.class
 
-# Kaldi
-Kaldi/
-
-# OS-specific
-.DS_Store
-
-# Other large or unnecessary files
-data/
-*.log
+# Python Environment Caches
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.tox/
+.venv/
+venv/
+ENV/
+
+# System Files
+.DS_Store
+Thumbs.db
+.qodo/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+credentials.json
+client_secret.json
+token.json
+secrets.json
+
+# Speech training checkpoints & datasets
+datasets/
+models/
+*.wav
+*.pt
+*.pth
